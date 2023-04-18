@@ -1,72 +1,82 @@
-* {
-    margin: 0 16px;
-    padding: 24px 0;
-  }
+/* Estilo geral */
 body {
-    background-color: #491674;
-    }
-    header {
-        background-color: #573858;
-        color: white;
-        }* 
-        .cabecalho-imagem{
-            width: 20%;
-            }
-
-        .cabecalho {
-background-color: #380647;
-color: white;
-display:flex;
-justify-content: space-around;
-padding: 24px 0;
-}
-.cabecalho-lista-item{
+    background-image:linear-gradient( #748162, #b7cf95,);
+ }
+ {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+   header, main, footer {
+    padding: 20px;
+  }
+   header {
+  background-image:linear-gradient(#b7cf95, #748162);
+  }
+   h1, h2 {
+    margin-top: 0;
+  }
+   nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+   nav ul li {
     display: inline-block;
-    margin: 0 16px;
-    padding: 24px 0;
-font-size: 24px;
+    margin-left: 20px;
+  }
+   nav ul li:first-child {
+    margin-left: 0;
+  }
+   nav ul li a {
+    color: #f3f0f0;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+   nav ul li a:hover {
+    text-decoration: underline;
+  }
+   main {
+    background-image:linear-gradient(#748162,#b7cf95);
+  }
+  {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+   section {
+    margin-bottom: 50px;
+  }
+   footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+  }
+   footer img {
+    width: 60px;
+  }
+   /* Estilo responsivo */
+  @media (max-width: 768px) {
+    nav ul {
+      display: block;
+      margin: 20px 0 0;
+      text-align: left;
     }
-    .escola-imagem{
-        width:25%;
-        }
-        .escola {
-            background-image: linear-gradient(#801080,#00c0eb);
-            color: white;
-            color: rgb(219, 44, 161);
-display:flex;
-            }
-            .escola-conteudo{
-                width: 35%;
-                display:flex;
-                justify-content: center;
-                align-items: center;
-                padding: 24px 0;
-                }
-                .escola-titulo {
-                    padding: 24px 0;
-                    }
-                    body{
-                        font-family:’Poppins’,sans-serif;
-                        }
-                        .estudante-imagem{
-                            width: 120px;
-                            }
-                            .estudante-icone{
-                                width:24px;
-                                }
-                                .estudante-div {
-                                    text-align: center;
-                                    }
-                                    .estudante-titulo{
-                                        text-align: center;
-                                        padding: 50px 0;
-                                        }
-                                        .estudante-todos {
-                                            display:grid;
-                                            grid-template-columns: 20% 20% 20% 20%;  
-                                            }
-                                            footer{
-                                                background-color: black;
-                                                padding: 15px 0;
-                                                text-align: center;
-                                                }
+     nav ul li {
+      display: block;
+      margin: 0;
+    }
+     nav ul li a {
+      font-size: 16px;
+    }
+  }
+   @media (max-width: 480px) {
+    h1 {
+      font-size: 24px;
+    }
+     nav {
+      margin-bottom: 20px;
+    }
+     nav ul li {
+      margin-left: 10px;
+ 
